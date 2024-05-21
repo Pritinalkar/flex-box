@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex box</title>
+    <style>
+        .cards{
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            border-radius: 5px;
+        }
+        .card1{
+            height: 800px;
+            width: 800px;
+            display: flex;
+           flex-direction: column;
+            background-color: black;
+            border-radius: 5px;
+            position: absolute;
+            top: 450px;
+        }
+        .movies{
+            height: 350px;
+            width: 250px;
+            margin: 20px;
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .img{
+            position: absolute;
+            left:100px ;
+            top: 130px;
+            height: 50px;
+            width: 50px;
+        }
+        .name{
+            font-size: x-large;
+        }
+        .card2{
+            height: 800px;
+            width: 800px;
+            display: flex;
+           flex-direction: row;
+           justify-content: start;
+            background-color: black;
+            border-radius: 5px;
+           position: absolute;
+            }
+    </style>
 </head>
 <body>
     <h1>Movies</h1>
+    <div class="cards">
+     <div class="movies">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQGsRDDURcb5pVc-09om9xY3lQ97kyIaL3WrXukSenw&s">
+        <img class="img"  src="https://www.pngall.com/wp-content/uploads/5/Play-Button-PNG-File-Download-Free.png">
+        <b class="name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           Morbius</b>
+     </div>
+     </div>
+     <div class="card1">
+     <div class="movies">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ86zZk8pbJDZ06zYUUgrvWvd1-zn6MhUXIM3Pp3lO-VoxrRSwahHHC5Qh-2fdu261rcvM&usqp=CAU">
+        <img class="img"  src="https://www.pngall.com/wp-content/uploads/5/Play-Button-PNG-File-Download-Free.png">
+        <b class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Witcher</b>
+        <br>
+        &nbsp;&nbsp;Length &nbsp;&nbsp; Lang &nbsp;&nbsp; Rating
+        <br>
+        &nbsp;&nbsp;01:39 &nbsp;&nbsp;&nbsp;&nbsp; Eng &nbsp;&nbsp;&nbsp;&nbsp; 6.8
+     </div>
+     </div>
+     <div class="card2">
+     <div class="movies">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENPeXOU9kyl5-xnZZNCd9LwfLkpwdlFSNpIy7lev-y03nqEhabcTDl4a4RR-nTQe-XuM&usqp=CAU">
+        <img class="img"  src="https://www.pngall.com/wp-content/uploads/5/Play-Button-PNG-File-Download-Free.png">
+     </div>
+     </div>
+    </div>
     </body>
 </html>
